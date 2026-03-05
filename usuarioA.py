@@ -41,4 +41,8 @@ def es_capicua(numero):
 
 def es_perfecto(numero):
     
-    pass
+    for i in numero: 
+        print(i)
+    if numero == i:
+        print("Es perfecto")
+    
