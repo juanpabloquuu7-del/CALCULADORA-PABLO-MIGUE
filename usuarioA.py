@@ -28,7 +28,8 @@ def serie_fibonacci(n):
 
 def es_capicua(numero):
     
-    pass
+    for i in numero:
+    print(i)
 
 def es_perfecto(numero):
     

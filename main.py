@@ -1,4 +1,4 @@
-from usuarioA import serie_fibonacci
+from usuarioA import serie_fibonacci, es_capicua
 
 def menu():
     while True:
@@ -21,7 +21,9 @@ def menu():
                 n = int(input("¿Cuántos términos de Fibonacci desea ver?: "))
                 serie_fibonacci(n)
         elif opcion == "2":
-            pass
+                num_input = input("Ingrese el número para verificar si es capicúa: ")
+                num_validado = int(num_input)
+                es_capicua(num_validado)
         elif opcion == "3":
             pass
         elif opcion == "4":
