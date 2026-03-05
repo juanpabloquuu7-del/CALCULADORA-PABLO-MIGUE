@@ -41,4 +41,20 @@ def es_capicua(numero):
 
 def es_perfecto(numero):
     
-    pass
+    if numero <= 0:
+        print("Por favor, ingrese un número mayor a 0.")
+        return
+    
+    suma = 0
+    
+    for i in range(1, numero):
+        if numero % i == 0:
+            suma += i
+            
+    if suma == numero:
+        print(f"¡Sí! {numero} es un número perfecto.")
+    else:
+        print(f"No, el número {numero} no es perfecto.")
+    
+    print()
+    input("presiona enter para continuar...")
