@@ -28,13 +28,16 @@ def serie_fibonacci(n):
 
 def es_capicua(numero):
     
-    n_str = str(numero)
     
-    if n_str[0] == n_str[-1]:
-        print(f"El número {numero} es capicúa")
+    texto = str(numero)
+    # El [::-1] da vuelta todo el texto de forma exacta
+    if texto == texto[::-1]:
+        print(f"¡Si! El número {numero} es capicúa de principio a fin.")
     else:
-        print(f"El número {numero} NO es capicúa")
-    input("Presiona enter para continuar...")
+        print(f"No, el número {numero} no es capicúa.")
+    
+    print()
+    input("presiona enter para continuar...")
 
 def es_perfecto(numero):
     
