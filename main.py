@@ -1,3 +1,5 @@
+from usuarioA import serie_fibonacci, es_capicua,es_perfecto
+
 def menu():
     while True:
         print("\n===============================")
@@ -16,11 +18,15 @@ def menu():
         opcion = input("Seleccione una opción (1-8): ")
 
         if opcion == "1":
-            pass
+                n = int(input("¿Cuántos términos de Fibonacci desea ver?: "))
+                serie_fibonacci(n)
         elif opcion == "2":
-            pass
+                num_input = input("Ingrese el número para verificar si es capicúa: ")
+                num_validado = int(num_input)
+                es_capicua(num_validado)
         elif opcion == "3":
-            pass
+                num = int(input("Ingrese el número para verificar si es perfecto: "))
+                es_perfecto(num)
         elif opcion == "4":
             pass
         elif opcion == "5":
