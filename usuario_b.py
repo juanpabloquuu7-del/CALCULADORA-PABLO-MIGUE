@@ -57,5 +57,11 @@ def verificar_si_es_primo():
 #6. factorial
 def calcular_factorial():
     n = int(input("Introduce un número para calcular su factorial: "))
+    if n < 0:
+        print("No existe el factorial de números negativos.")
+        return
     
-    print(f"Calculando el factorial de {n}...")
+    resultado = 1
+    for i in range(1, n + 1):
+        resultado *= i
+    print(f"El factorial de {n} es: {resultado}")
