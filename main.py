@@ -34,7 +34,7 @@ def menu():
         elif opcion == "6":
             usuario_b.calcular_factorial()
         elif opcion == "7":
-            pass
+            usuario_b.calcular_mcd()
         elif opcion == "8":
             pass
         else:

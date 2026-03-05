@@ -65,6 +65,7 @@ def calcular_factorial():
     for i in range(1, n + 1):
         resultado *= i
     print(f"El factorial de {n} es: {resultado}")
+    input ("Presione cualquier tecla para continuar -->")
 #7. mcd
 def calcular_mcd():
     a = abs(int(input("Introduce el primer número: ")))
@@ -75,3 +76,4 @@ def calcular_mcd():
         num1, num2 = num2, num1 % num2
     
     print(f"El Máximo Común Divisor de {a} y {b} es: {num1}")
+    input ("Presione cualquier tecla para continuar -->")
