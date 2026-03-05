@@ -1,3 +1,5 @@
+from usuarioA import serie_fibonacci
+
 def menu():
     while True:
         print("\n===============================")
@@ -16,7 +18,8 @@ def menu():
         opcion = input("Seleccione una opción (1-8): ")
 
         if opcion == "1":
-            pass
+                n = int(input("¿Cuántos términos de Fibonacci desea ver?: "))
+                serie_fibonacci(n)
         elif opcion == "2":
             pass
         elif opcion == "3":
