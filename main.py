@@ -28,9 +28,9 @@ def menu():
                 num = int(input("Ingrese el número para verificar si es perfecto: "))
                 es_perfecto(num)
         elif opcion == "4":
-            usuario_b.primos_en_rango()
+            usuario_b.primos_en_rango
         elif opcion == "5":
-            pass
+            usuario_b.verificar_si_es_primo
         elif opcion == "6":
             pass
         elif opcion == "7":
