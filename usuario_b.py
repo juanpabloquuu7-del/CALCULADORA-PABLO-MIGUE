@@ -65,3 +65,9 @@ def calcular_factorial():
     for i in range(1, n + 1):
         resultado *= i
     print(f"El factorial de {n} es: {resultado}")
+#7. mcd
+
+def calcular_mcd():
+    a = int(input("Introduce el primer número: "))
+    b = int(input("Introduce el segundo número: "))
+    print(f"Calculando el MCD de {a} y {b}...")
