@@ -1,5 +1,5 @@
 from usuarioA import serie_fibonacci, es_capicua,es_perfecto
-import usuario_b
+import usuario_b 
 def menu():
     while True:
         print("\n===============================")
@@ -28,11 +28,11 @@ def menu():
                 num = int(input("Ingrese el número para verificar si es perfecto: "))
                 es_perfecto(num)
         elif opcion == "4":
-            usuario_b.primos_en_rango
+            usuario_b.primos_en_rango()
         elif opcion == "5":
-            usuario_b.verificar_si_es_primo
+            usuario_b.verificar_si_es_primo()
         elif opcion == "6":
-            pass
+            usuario_b.calcular_factorial()
         elif opcion == "7":
             pass
         elif opcion == "8":
