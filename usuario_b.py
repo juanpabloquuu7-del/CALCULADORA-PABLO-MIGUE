@@ -54,3 +54,8 @@ def verificar_si_es_primo():
     else:
         print(f"El número {n} no es primo.")
     input ("Presione cualquier tecla para continuar -->")
+#6. factorial
+def calcular_factorial():
+    n = int(input("Introduce un número para calcular su factorial: "))
+    
+    print(f"Calculando el factorial de {n}...")
