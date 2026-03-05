@@ -66,8 +66,12 @@ def calcular_factorial():
         resultado *= i
     print(f"El factorial de {n} es: {resultado}")
 #7. mcd
-
 def calcular_mcd():
-    a = int(input("Introduce el primer número: "))
-    b = int(input("Introduce el segundo número: "))
-    print(f"Calculando el MCD de {a} y {b}...")
+    a = abs(int(input("Introduce el primer número: ")))
+    b = abs(int(input("Introduce el segundo número: ")))
+    
+    num1, num2 = a, b
+    while num2:
+        num1, num2 = num2, num1 % num2
+    
+    print(f"El Máximo Común Divisor de {a} y {b} es: {num1}")
